@@ -23,6 +23,7 @@ class DemoApplicationTests {
     public void show(){
         List<User> users = userMapper.selectList(null);
         users.forEach(System.out::println);
+        userMapper.hashCode();
     }
     @Test
     public void insert(){
